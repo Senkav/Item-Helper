@@ -42,19 +42,5 @@ Enemy Focus
 количество строк Enemy Focus
 
 Панель перетаскивается мышью за шапку, позиция сохраняется между сессиями.
-Структура кода
-item_helper.lua
-├── Локализация (L_STRINGS, L_REASONS, L_REASON_SLANG, L_NEUTRAL_REASONS)
-├── HERO_TAGS           — теги угроз по героям (~130 героев)
-├── HERO_ROLES          — роль и стиль каждого героя
-├── ITEM_ROLE_PENALTY   — штрафы предметов по роли/стилю
-├── HERO_SPECIFIC_ITEMS — бонусы/штрафы предметов для конкретных героев
-├── HERO_COUNTERS       — прямые контрпики по героям
-├── ITEM_COSTS          — стоимости предметов для нетворс-расчётов
-├── ITEM_DB             — основная база предметов (~80 предметов)
-├── NEUTRAL_DB          — нейтральные предметы T1–T5 (~60 предметов)
-├── COUNTER_RULES       — правила контр-логики (тег угрозы → тег предмета)
-├── Движок анализа      — computeItemScore, analyzeEnemyTeam и др.
-└── Рендер панели       — drawPanel, drawHeader, drawItemCard и др.
 Требования
 Движок с Lua-скриптингом, поддерживающий стандартные API: Heroes, NPC, Entity, Render, Menu, Input, Engine, Panorama.
